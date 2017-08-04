@@ -1,0 +1,50 @@
+.header-default {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 46px;
+  background-color: $header-flat;
+  &.header-skin {
+    background-color: $header-gradient-start;
+    background-image: linear-gradient(
+    $header-gradient-start,
+    $header-gradient-end
+    );
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2), inset 0 -2px 0 rgba(0, 0, 0, .08);
+  }
+  .header-brand {
+    float: left;
+    padding: 0 15px;
+    overflow: hidden;
+    color: #fff;
+    a {
+      display: block;
+      float: left;
+      height: 100%;
+      padding: 12px 0 9px;
+    }
+    img {
+      height: 100%;
+    }
+  }
+  .header-nav {
+    float: right;
+    font-size: 13px;
+    a {
+      display: block;
+      float: left;
+      height: 100%;
+      padding: .8rem .8rem .8rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all .1s;
+      &:hover {
+        background-color: rgba(0, 0, 0, .1);
+      }
+    }
+  }
+}
